@@ -1,0 +1,84 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+
+  /*---- apply a natural box layout model to all elements -------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  body{
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+  }
+
+  #headerWrapped {
+    background-color: #abc;
+    color: $secondaryColor;
+  }
+  header {
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem $gutter;
+    gap: 8px;
+    h1 {
+        margin: 0;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+    }
+    a .tel {
+      color: $fontColor;
+      text-align: end;
+    }
+  }
+
+  #navWrapper {
+    background-color: rgb(103, 103, 103);
+  }
+
+  nav{
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        li {flex:1;}
+    }
+    li.active {
+        background-color: rgb(255, 111, 0);
+    }
+    a {
+        display: block;
+        padding: 0.75rem;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        &:hover {
+            color: rgb(255, 255, 255);
+        }
+    }
+  }
+
+  //main stuff
+  
+
+  // begin footer
+#footerWrapper {
+    background-color: rgb(255, 111, 0);
+}
+footer {
+    padding: 0.5rem $gutter;
+    p {
+        margin: 0;
+        font-weight: $lightWeight;
+        text-align: center;
+    }
+}
