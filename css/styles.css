@@ -400,16 +400,10 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
-  section {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     max-width: 60rem;
     margin: auto;
-  }
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
