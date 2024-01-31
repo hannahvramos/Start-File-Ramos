@@ -329,12 +329,13 @@ body {
   height: 100%;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  color: #333;
+  color: #ffffff;
+  background-color: rgb(16, 16, 16);
 }
 
 #headerWrapped {
-  background-color: #abc;
-  color: #797979;
+  background-color: #ffb941;
+  color: #ffffff;
 }
 
 header {
@@ -345,16 +346,17 @@ header {
 }
 header h1 {
   margin: 0;
+  padding: 0;
   font-size: 1.2rem;
   font-weight: 400;
 }
 header a .tel {
-  color: #333;
+  color: #ffffff;
   text-align: end;
 }
 
 #navWrapper {
-  background-color: rgb(192, 192, 192);
+  background-color: rgb(88, 0, 139);
 }
 
 nav ul {
@@ -367,17 +369,31 @@ nav ul li {
   flex: 1;
 }
 nav li.active {
-  background-color: rgb(255, 111, 0);
+  background-color: rgb(47, 1, 74);
+  color: bisque;
 }
 nav a {
   display: block;
   padding: 0.75rem;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
 }
 nav a:hover {
-  color: rgb(255, 255, 255);
+  color: #ffb941;
+}
+
+main {
+  background-color: rgb(47, 1, 74);
+  padding: 2rem;
+}
+
+#mainWrapper {
+  margin-top: 2rem;
+  padding: 0;
+}
+#mainWrapper h1 {
+  margin: 0;
 }
 
 section {
@@ -395,7 +411,7 @@ section div img {
 }
 
 #footerWrapper {
-  background-color: rgb(255, 111, 0);
+  background-color: #58008b;
 }
 
 footer {

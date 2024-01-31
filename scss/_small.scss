@@ -18,11 +18,12 @@ html {
     font-family: $defaultFont;
     font-weight: $normalWeight;
     color: $fontColor;
+    background-color: rgb(16, 16, 16);
   }
 
   #headerWrapped {
-    background-color: #abc;
-    color: $secondaryColor;
+    background-color: #ffb941;
+    color: $fontColor;
   }
   header {
     display: flex;
@@ -31,6 +32,7 @@ html {
     gap: 8px;
     h1 {
         margin: 0;
+        padding: 0;
         font-size: 1.2rem;
         font-weight: $normalWeight;
     }
@@ -41,7 +43,7 @@ html {
   }
 
   #navWrapper {
-    background-color: rgb(192, 192, 192);
+    background-color:rgb(88, 0, 139);
   }
 
   nav{
@@ -53,21 +55,34 @@ html {
         li {flex:1;}
     }
     li.active {
-        background-color: rgb(255, 111, 0);
+        background-color: rgb(47, 1, 74);
+        color: bisque;
     }
     a {
         display: block;
         padding: 0.75rem;
-        color: black;
+        color: rgb(255, 255, 255);
         text-align: center;
         text-decoration: none;
         &:hover {
-            color: rgb(255, 255, 255);
+            color: #ffb941;
         }
     }
   }
 
   //main stuff
+  main {
+    background-color: rgb(47, 1, 74);
+    padding: 2rem;
+  }
+  #mainWrapper {
+  margin-top: 2rem;
+  padding: 0;
+  h1 {
+    margin: 0;
+  }
+  }
+
   section {
     display: grid;
     grid-template-columns: 1fr;
@@ -83,7 +98,7 @@ html {
 
   // begin footer
 #footerWrapper {
-    background-color: rgb(255, 111, 0);
+    background-color: #58008b;
 }
 footer {
     padding: 0.5rem $gutter;
