@@ -36,8 +36,8 @@ html {
         font-size: 1.2rem;
         font-weight: $normalWeight;
     }
-    a .tel {
-      color: $fontColor;
+    a.tel {
+      color: $secondaryColor;
       text-align: end;
     }
   }
