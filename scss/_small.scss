@@ -65,7 +65,7 @@ html {
         text-align: center;
         text-decoration: none;
         &:hover {
-            color: #ffb941;
+            color: $secondaryColor;
         }
     }
   }
@@ -80,6 +80,12 @@ html {
   padding: 0;
   h1 {
     margin: 0;
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+    color: $secondaryColor;
+    font-weight: $lightWeight;
   }
   }
 
