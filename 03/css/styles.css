@@ -329,13 +329,13 @@ body {
   height: 100%;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
-  color: #000000;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #101010;
 }
 
-#headerWrapper {
-  background-color: #ded4cb;
-  color: #000000;
+#headerWrapped {
+  background-color: #ffb941;
+  color: #ffffff;
 }
 
 header {
@@ -349,55 +349,47 @@ header h1 {
   padding: 0;
   font-size: 1.2rem;
   font-weight: 400;
-  align-self: center;
+}
+header a.tel {
+  color: #ffb941;
+  text-align: end;
 }
 
 #navWrapper {
-  background-color: #574f41;
+  background-color: rgb(88, 0, 139);
 }
 
-nav {
-  /*li.active {
-      /*background-color: $secondaryColor;
-      color: $primaryColor;*/
-}
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+}
+nav ul li {
+  flex: 1;
+}
+nav li.active {
+  background-color: rgb(47, 1, 74);
+  color: bisque;
+}
+nav a {
+  display: block;
+  padding: 0.75rem;
+  color: rgb(255, 255, 255);
   text-align: center;
-  display: block;
-  /*li {flex:0;}*/
-}
-nav li {
-  color: #000000;
-}
-
-a {
-  display: block;
-  padding: 1rem;
-  color: #fff;
-  text-align: right;
   text-decoration: none;
 }
-a:hover {
-  color: #ded4cb;
-  -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
-}
-a:active {
-  color: #ded4cb;
+nav a:hover {
+  color: #ffb941;
 }
 
 main {
-  background-color: #ffffff;
-  padding: 0rem;
-  margin: 0;
+  background-color: rgb(47, 1, 74);
+  padding: 2rem;
 }
 
 #mainWrapper {
-  display: flex;
-  margin: 0rem;
+  margin-top: 2rem;
   padding: 0;
 }
 #mainWrapper h1 {
@@ -406,13 +398,8 @@ main {
 #mainWrapper h3 {
   margin-top: 0;
   margin-bottom: 0.25rem;
-  color: #ffffff;
+  color: #ffb941;
   font-weight: 300;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
 }
 
 section {
@@ -430,7 +417,7 @@ section div img {
 }
 
 #footerWrapper {
-  background-color: #ded4cb;
+  background-color: #58008b;
 }
 
 footer {
@@ -449,9 +436,19 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
-  nav ul {
-    display: flex;
-    justify-content: space-between;
+  section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (min-width: 60rem) {
+  header, nav, main, footer {
+    max-width: 60rem;
+    margin: auto;
+  }
+  section {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}y-content: space-between;
   }
   nav li {
     margin-left: 2rem;
