@@ -5,6 +5,18 @@ header {
     }
 }
 
+nav {
+    ul {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    li {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
 //main stuff
 section {
     grid-template-columns: 1fr 1fr;

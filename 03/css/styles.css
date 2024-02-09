@@ -330,11 +330,11 @@ body {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   color: #000000;
-  background-color: #ded4cb;
+  background-color: #ffffff;
 }
 
-#headerWrapped {
-  background-color: #ffffff;
+#headerWrapper {
+  background-color: #ded4cb;
   color: #000000;
 }
 
@@ -349,43 +349,55 @@ header h1 {
   padding: 0;
   font-size: 1.2rem;
   font-weight: 400;
+  align-self: center;
 }
 
 #navWrapper {
   background-color: #574f41;
 }
 
+nav {
+  /*li.active {
+      /*background-color: $secondaryColor;
+      color: $primaryColor;*/
+}
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  text-align: center;
+  display: block;
+  /*li {flex:0;}*/
 }
-nav ul li {
-  flex: 1;
-}
-nav li.active {
-  /*background-color: $secondaryColor;*/
+nav li {
   color: #000000;
 }
-nav a {
+
+a {
   display: block;
-  padding: 0.75rem;
+  padding: 1rem;
   color: #fff;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
 }
-nav a:hover {
+a:hover {
+  color: #ded4cb;
+  -webkit-text-decoration: underline wavy;
+          text-decoration: underline wavy;
+}
+a:active {
   color: #ded4cb;
 }
 
 main {
   background-color: #ffffff;
-  padding: 2rem;
+  padding: 0rem;
+  margin: 0;
 }
 
 #mainWrapper {
-  margin-top: 0rem;
+  display: flex;
+  margin: 0rem;
   padding: 0;
 }
 #mainWrapper h1 {
@@ -396,6 +408,11 @@ main {
   margin-bottom: 0.25rem;
   color: #ffffff;
   font-weight: 300;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
 }
 
 section {
@@ -432,19 +449,25 @@ footer p {
   header h1 {
     font-size: 2rem;
   }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav li {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   section {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
-    max-width: 60rem;
     margin: auto;
   }
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}  margin: auto;
+  nav ul {
+    display: flex;
+    justify-content: right;
   }
   section {
     grid-template-columns: 1fr 1fr 1fr;
