@@ -401,7 +401,8 @@ main {
   padding: 0;
 }
 #mainWrapper h1 {
-  margin: 0;
+  margin: 1rem;
+  padding: 1rem;
 }
 #mainWrapper h3 {
   margin-top: 0;
@@ -427,6 +428,20 @@ section div {
 section div img {
   width: 100%;
   height: auto;
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+}
+
+details {
+  margin: 1rem 16px;
+}
+details summary {
+  padding: 2rem;
+  background-color: #ded4cb;
+  font-weight: 400;
 }
 
 #footerWrapper {

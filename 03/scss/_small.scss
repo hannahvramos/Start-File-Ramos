@@ -87,7 +87,8 @@ html {
     padding: 0;
   
   h1 {
-    margin: 0;
+    margin: 1rem;
+    padding: 1rem;
   }
   h3 {
     margin-top: 0;
@@ -113,6 +114,19 @@ html {
       width: 100%;
       height: auto;
   }
+}
+
+video {
+  width: 90%;
+  margin-left: 5%;
+}
+
+details {
+  margin: 1rem $gutter;
+  summary {
+    padding: 2rem;
+    background-color: $primaryColor;
+  font-weight: $normalWeight;}
 }
 
   // begin footer
