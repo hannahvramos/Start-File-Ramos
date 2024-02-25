@@ -353,51 +353,65 @@ header h1 {
 }
 
 #navWrapper {
-  background-color: #574f41;
+  background-color: #c0873e;
 }
 
-nav {
-  /*li.active {
-      /*background-color: $secondaryColor;
-      color: $primaryColor;*/
+nav button {
+  margin: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
 }
 nav ul {
+  display: none;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: 0;
+}
+nav ul.open {
+  display: block;
+}
+nav ul li {
   list-style-type: none;
-  padding: 0;
+  padding: 2rem, 0, 2rem, 0;
   margin: 0;
   text-align: center;
   display: block;
-  /*li {flex:0;}*/
+  border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
 }
-nav li {
-  color: #000000;
+nav ul li:active {
+  background-color: #a17134;
 }
-
-a {
+nav ul li:hover {
+  background-color: #b17c39;
+}
+nav ul li a {
   display: block;
-  padding: 1rem;
-  color: #fff;
-  text-align: right;
+  padding: 1rem 2vw;
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  text-align: left;
+}
+nav ul li a:hover {
+  color: #ded4cb;
   text-decoration: none;
 }
-a:hover {
-  color: #ded4cb;
-  -webkit-text-decoration: underline wavy;
-          text-decoration: underline wavy;
-}
-a:active {
+nav ul li a:active {
   color: #ded4cb;
 }
 
 main {
   background-color: #ffffff;
-  padding: 0rem;
+  padding: 0;
   margin: 0;
 }
 
 #mainWrapper {
   display: flex;
-  margin: 0rem;
+  margin: 0;
   padding: 0;
 }
 #mainWrapper h1 {
@@ -411,37 +425,44 @@ main {
   font-weight: 300;
 }
 
-.hero img {
+div.allcards {
+  padding: 0 16px;
+}
+div.allcards section {
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+  align-items: center;
+  margin: 1rem 0;
+  background-color: #c0873e;
+}
+div.allcards section h2, div.allcards section p, div.allcards section a {
+  margin: 0;
+  padding: 0.75rem 16px;
+}
+div.allcards section h2 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+div.allcards section img {
   width: 100%;
   height: auto;
+  display: block;
+  margin: 0;
 }
-
-section {
-  display: grid;
-  grid-template-columns: 1fr;
+div.allcards section img.e2e {
+  padding: 0;
 }
-
-section div {
-  width: 100%;
-  padding: 1rem 16px;
+div.allcards section p {
+  font-style: italic;
+  text-align: center;
 }
-section div img {
-  width: 100%;
-  height: auto;
-}
-
-video {
-  width: 90%;
-  margin-left: 5%;
-}
-
-details {
-  margin: 1rem 16px;
-}
-details summary {
-  padding: 2rem;
-  background-color: #ded4cb;
-  font-weight: 400;
+div.allcards section a {
+  display: block;
+  color: rgba(0, 0, 0, 0.9);
+  font-style: oblique;
+  text-align: right;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 #footerWrapper {
@@ -450,58 +471,92 @@ details summary {
 
 footer {
   padding: 0.5rem 16px;
+  background-color: #ded4cb;
 }
-footer p {
+footer section.contact p {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+footer section.contact a {
+  color: #000000;
+}
+footer section.contact ion-icon {
+  color: #c0873e;
+  padding-right: 5px;
+}
+footer section.social {
+  display: flex;
+  justify-content: center;
+}
+footer section.social a {
+  display: block;
+  border: solid 1px #c0873e;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #c0873e;
+  line-height: 100%;
+}
+footer section.social a:hover {
+  background-color: #ffffff;
+}
+footer section.location {
+  font-size: 1.5rem;
+}
+footer p.legal {
   margin: 0;
   font-weight: 300;
   text-align: center;
 }
 
 @media only screen and (min-width: 35rem) {
-  header {
+  #headerWrapper header {
     padding: 2rem 16px;
   }
-  header h1 {
+  #headerWrapper header h1 {
     font-size: 2rem;
   }
-  nav ul {
+  div.allcards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
   }
-  nav li {
-    margin-left: 2rem;
-    margin-right: 2rem;
+  div.allcards section {
+    flex-basis: calc(50% - 8px);
   }
-  section {
-    grid-template-columns: 1fr 1fr;
+  footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
   }
 }
 @media only screen and (min-width: 60rem) {
   header, nav, main, footer {
     margin: auto;
   }
-  nav ul {
+  nav {
     display: flex;
-    justify-content: right;
-  }
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}main, footer {
-    margin: auto;
+    align-self: flex-start;
   }
   nav button {
     display: none;
   }
-  nav ul {
+  nav ul, nav ul.open {
+    margin-left: 2vw;
     border: none;
     display: flex;
-    justify-content: right;
+    justify-content: left;
   }
   nav ul li {
     border: none;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
-  section {
-    grid-template-columns: 1fr 1fr 1fr;
+  div.allcards section {
+    flex-basis: calc(33.333% - 10.6666666667px);
+  }
+  footer div {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
