@@ -381,11 +381,11 @@ nav ul li {
   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.9);
 }
-nav ul li:active {
-  background-color: #a17134;
-}
 nav ul li:hover {
   background-color: #b17c39;
+}
+nav ul li .active {
+  background-color: #a17134;
 }
 nav ul li a {
   display: block;
@@ -393,13 +393,6 @@ nav ul li a {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   text-align: left;
-}
-nav ul li a:hover {
-  color: #ded4cb;
-  text-decoration: none;
-}
-nav ul li a:active {
-  color: #ded4cb;
 }
 
 main {
@@ -533,10 +526,6 @@ footer p.legal {
   header, nav, main, footer {
     margin: auto;
   }
-  nav {
-    display: flex;
-    align-self: flex-start;
-  }
   nav button {
     display: none;
   }
@@ -544,7 +533,7 @@ footer p.legal {
     margin-left: 2vw;
     border: none;
     display: flex;
-    justify-content: left;
+    justify-content: right;
   }
   nav ul li {
     border: none;

@@ -67,12 +67,12 @@ html {
         display: block;
         border-bottom: solid 1px rgba(255,255,255,0.1);
         color: rgba(255,255,255,0.9);
-        &:active {
-          background-color: darken($tertiaryColor, 8%);
-        }
         &:hover {
           background-color: darken($tertiaryColor, 4%)
         }
+    }
+    ul li.active {
+        background-color: darken($tertiaryColor, 8%);
     }
     ul li a {
         display: block;
@@ -80,13 +80,6 @@ html {
         color: rgba(255,255,255,0.9);
         text-decoration: none;
         text-align: left;
-        &:hover {
-            color: $primaryColor;
-            text-decoration: none;
-        }
-        &:active {
-          color: $primaryColor;
-        }
     }
   }
   
