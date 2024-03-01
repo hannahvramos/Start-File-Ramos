@@ -384,7 +384,7 @@ nav ul li {
 nav ul li:hover {
   background-color: #b17c39;
 }
-nav ul li .active {
+nav ul li.active {
   background-color: #a17134;
 }
 nav ul li a {
