@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Start File | Home Page</title>
+    <title>Start File | Auto Dealer</title>
     <meta name="description" content="Hannah Ramos start file with scss">
     <meta name="author" content="Hannah Ramos">
     <meta charset="UTF-8">
@@ -21,26 +21,35 @@
 <body>
     <div id="headerWrapper">
         <header>
-            <!--<a href=#><img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a> -->
-            <h1>Hannah Ramos 2610 Home Page</h1>
+            <a href="index.html"><img src="images/logo1x.png" alt="logo" width="223" height="75" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+            <a href="tel:1234567890"><h2>(123) 456-7890</h2></a>
         </header>
     </div>
 
     <div id="navWrapper">
         <nav>
-            <ul>
-                <li><a href="02/">02</a></li>
-                <li><a href="03/">03</a></li>
-                <li><a href="04/">04</a></li>
-                <li><a href="05/">05</a></li>
+            <button id="hamButton"><span>&#9776;</span><span>x</span></button>
+            <ul id="primaryNav">
+                <li class="active"><a href="home.html">Home</a></li>
+                <li><a href="avaliable.html">Avaliable</a></li>
+                <li><a href="trade.html">Trade In</a></li>
             </ul>
         </nav>
     </div>
 
+    <div id="mainWrapper">
+        <main>
+            <h1>Home</h1>
+        </main>
+    </div>
+
     <div id="footer">
         <footer>
-            <p>&copy; <span id="year">X</span> &bull; Hannah Ramos</p>
+
+            <p class="legal">&copy; <span id="year">X</span> &bull; Hannah Ramos</p>
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>

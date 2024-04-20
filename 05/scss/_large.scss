@@ -1,0 +1,36 @@
+header, nav, main, footer {
+   // max-width: 60rem;
+    margin: auto;
+}
+
+//nav stuff
+nav {
+    button {
+        display: none;
+    }
+    ul, ul.open {
+        margin-left: 2vw;
+        border: none;
+        display: flex;
+        justify-content: left;
+    }
+    ul li {
+        border: none;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+
+//main stuff
+div.cards {
+    section {
+        flex-basis: calc(33.333% - ($gutter*2)/3);
+        //width: fit-content;
+    }
+}
+
+//footer
+footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
