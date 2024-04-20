@@ -462,8 +462,7 @@ div.cards {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 24px 8px;
 }
-
-section {
+div.cards section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -475,25 +474,25 @@ section {
   overflow: hidden;
   margin: 1rem 0;
 }
-section h2, section p, section a {
+div.cards section h2, div.cards section p, div.cards section a {
   margin: 0;
   padding: 0.75rem 8px;
 }
-section h2 {
+div.cards section h2 {
   text-align: center;
   font-size: 1.5rem;
 }
-section img {
+div.cards section img {
   width: 50px;
   justify-content: center;
   align-items: center;
   margin: 0.5rem;
   position: relative;
 }
-section p {
+div.cards section p {
   text-align: left;
 }
-section button {
+div.cards section button {
   display: block;
   color: rgb(225, 48, 48);
   font-style: oblique;
@@ -504,34 +503,28 @@ section button {
   border: none;
   border-radius: 10px;
 }
-section a {
+div.cards section a {
   align-content: center;
 }
-
-.shape {
+div.cards .shape {
   width: 50px;
   height: 50px;
   padding: 5px;
   border-radius: 10px;
   background-color: white;
 }
-
-.bounce:hover img {
+div.cards .bounce:hover img {
   animation: myBounce 1s 1;
 }
-
-.spin:hover img {
+div.cards .spin:hover img {
   animation: mySpin 2s 6;
 }
-
-.pulse:hover img {
+div.cards .pulse:hover img {
   animation: myPulse 1s 1;
 }
-
-.color:hover .shape {
+div.cards .color:hover .shape {
   animation: myColor 5s 3;
 }
-
 @keyframes myBounce {
   0%, 100% {
     top: 0;
@@ -588,6 +581,7 @@ section a {
     background-color: white;
   }
 }
+
 div.reviewWrapper {
   background-color: rgb(159, 21, 21);
   padding: 2rem 0;
