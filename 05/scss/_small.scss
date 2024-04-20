@@ -155,6 +155,7 @@ html {
     gap: 24px 8px;
     //width: fit-content;
     //justify-items: center;
+  }
     
   section {
     display: flex;
@@ -181,9 +182,8 @@ html {
       justify-content: center;
       align-items:center;
       margin: .5rem;
-      //position: relative;
+      position: relative;
       //display: block;
-      
     }
     p {
       //font-style: italic;
@@ -204,17 +204,18 @@ html {
     a {
       align-content: center;
     }
-
+  }
     .shape {
       width: 50px;
       height: 50px;
+      padding: 5px;
       border-radius: 10px;
-      border: black 1px solid;
-      margin: auto;
-      background-color: red;
+      //border: black 1px solid;
+      //margin: auto;
+      background-color: white;
     }
     .bounce:hover img {animation: myBounce 1s 1;}
-    .spin:hover img {animation: mySpin 1s 1;}
+    .spin:hover img {animation: mySpin 2s 6;}
     .pulse:hover img {animation: myPulse 1s 1;}
     .color:hover .shape {animation: myColor 5s 3;}
       
@@ -225,11 +226,11 @@ html {
         animation-timing-function: ease-in-out;
       }
       25%, 75% {
-        top: 200px;
+        top: 20px;
         animation-timing-function: ease-in-out;
       }
       50% {
-        top: 100px;
+        top: 10px;
         animation-timing-function: ease-in-out;
       }
     }
@@ -256,17 +257,17 @@ html {
 
     //color
     @keyframes myColor {
-      0% {background-color: red;}
-      15% {background-color: orange;}
-      30% {background-color: yellow;}
-      45% {background-color: green;}
-      60% {background-color: blue;}
-      75% {background-color: indigo;}
-      90% {background-color: violet;}
-      100% {background-color: red;}
+      0% {background-color: white;}
+      15% {background-color: red;}
+      30% {background-color: orange;}
+      45% {background-color: yellow;}
+      60% {background-color: grenn;}
+      75% {background-color: blue;}
+      90% {background-color: indigo;}
+      100% {background-color: white;}
     }
-  }
-}
+  //}
+//}
 
 
 //reveiws

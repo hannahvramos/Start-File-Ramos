@@ -462,7 +462,8 @@ div.cards {
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 24px 8px;
 }
-div.cards section {
+
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -474,24 +475,25 @@ div.cards section {
   overflow: hidden;
   margin: 1rem 0;
 }
-div.cards section h2, div.cards section p, div.cards section a {
+section h2, section p, section a {
   margin: 0;
   padding: 0.75rem 8px;
 }
-div.cards section h2 {
+section h2 {
   text-align: center;
   font-size: 1.5rem;
 }
-div.cards section img {
+section img {
   width: 50px;
   justify-content: center;
   align-items: center;
   margin: 0.5rem;
+  position: relative;
 }
-div.cards section p {
+section p {
   text-align: left;
 }
-div.cards section button {
+section button {
   display: block;
   color: rgb(225, 48, 48);
   font-style: oblique;
@@ -502,40 +504,45 @@ div.cards section button {
   border: none;
   border-radius: 10px;
 }
-div.cards section a {
+section a {
   align-content: center;
 }
-div.cards section .shape {
+
+.shape {
   width: 50px;
   height: 50px;
+  padding: 5px;
   border-radius: 10px;
-  border: black 1px solid;
-  margin: auto;
-  background-color: red;
+  background-color: white;
 }
-div.cards section .bounce:hover img {
+
+.bounce:hover img {
   animation: myBounce 1s 1;
 }
-div.cards section .spin:hover img {
-  animation: mySpin 1s 1;
+
+.spin:hover img {
+  animation: mySpin 2s 6;
 }
-div.cards section .pulse:hover img {
+
+.pulse:hover img {
   animation: myPulse 1s 1;
 }
-div.cards section .color:hover .shape {
+
+.color:hover .shape {
   animation: myColor 5s 3;
 }
+
 @keyframes myBounce {
   0%, 100% {
     top: 0;
     animation-timing-function: ease-in-out;
   }
   25%, 75% {
-    top: 200px;
+    top: 20px;
     animation-timing-function: ease-in-out;
   }
   50% {
-    top: 100px;
+    top: 10px;
     animation-timing-function: ease-in-out;
   }
 }
@@ -557,31 +564,30 @@ div.cards section .color:hover .shape {
 }
 @keyframes myColor {
   0% {
-    background-color: red;
+    background-color: white;
   }
   15% {
-    background-color: orange;
-  }
-  30% {
-    background-color: yellow;
-  }
-  45% {
-    background-color: green;
-  }
-  60% {
-    background-color: blue;
-  }
-  75% {
-    background-color: indigo;
-  }
-  90% {
-    background-color: violet;
-  }
-  100% {
     background-color: red;
   }
+  30% {
+    background-color: orange;
+  }
+  45% {
+    background-color: yellow;
+  }
+  60% {
+    background-color: grenn;
+  }
+  75% {
+    background-color: blue;
+  }
+  90% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: white;
+  }
 }
-
 div.reviewWrapper {
   background-color: rgb(159, 21, 21);
   padding: 2rem 0;
