@@ -31,7 +31,7 @@ for (let x = 0; x < reviews.length; x++) {
 
     for (let step = 0; step<reviews[x].stars; step++) {
         const myStar = document.createElement('img')
-        myStar.src = "../images/star.svg"
+        myStar.src = ".../images/star.svg"
         myReview.appendChild(myStar)
     }
 
