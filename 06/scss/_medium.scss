@@ -1,0 +1,37 @@
+//header
+#headerWrapper {
+header {
+    padding: 2rem $gutter;
+    h1 {
+        font-size: 2rem;
+    }
+}
+}
+
+//nav
+nav ul {
+    width: 200px;
+}
+
+//create for loop
+@for $i from 1 through 12 {
+    $w: calc($i /12) *100%;
+    .medium-#{$i} {flex-basis: $w}
+  }
+
+//main stuff
+div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gutter;
+    section {
+        flex-basis: calc(50% - ($gutter/2));
+    }
+}
+
+//footer
+footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}

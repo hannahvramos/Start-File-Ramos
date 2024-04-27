@@ -1,0 +1,72 @@
+header, main, footer {
+    max-width: 1240rem;
+    margin: auto;
+}
+
+//header
+header {
+    grid-template-columns: 51px auto;
+}
+//nav stuff
+nav {
+    button {
+        display: none;
+    }
+    justify-self: end;
+    ul, ul.open {
+
+        position: relative;
+        display: flex;
+        //margin-left: 2vw;
+        //padding: 1rem;
+        border: none;
+        justify-content: left;
+        background-color: transparent;
+        width: auto;
+    }
+    //ul li {
+    //    width: auto;
+    //    border: none;
+       // padding-left: 1rem;
+       // padding-right: 1rem;
+   // }
+    
+    ul li a {
+        color: $primaryColor;
+        background-color: transparent;
+        font-weight: $boldWeight;
+        //border-radius: 10px;
+        padding: .5rem 1rem;
+       // margin-left: .2rem;
+    }
+    ul li.active a {
+        background-color: transparent;
+        color: $tertiaryColor;
+    }
+    ul li a:hover {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 20px;
+    }
+}
+
+//create for loop
+@for $i from 1 through 12 {
+    $w: calc($i /12) *100%;
+    .large-#{$i} {flex-basis: $w}
+  }
+
+//main stuff
+div.cards {
+    section {
+        flex-basis: calc(33.333% - ($gutter*2)/3);
+        //width: fit-content;
+    }
+}
+
+//footer
+footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
