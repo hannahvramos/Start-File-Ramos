@@ -399,7 +399,6 @@ nav ul li a {
 .row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   margin: 1rem 0;
   padding: 0 8px;
 }
@@ -489,7 +488,6 @@ main img {
 }
 
 #mainWrapper {
-  display: flex;
   margin: 0;
   padding: 0;
 }
@@ -505,157 +503,6 @@ main img {
 }
 #mainWrapper h2 {
   color: #0071BC;
-}
-
-div.cards {
-  padding: 0 8px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 24px 8px;
-}
-div.cards section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 15rem;
-  width: auto;
-  border: 1px solid black;
-  border-radius: 10px;
-  overflow: hidden;
-  margin: 1rem 0;
-}
-div.cards section h2, div.cards section p, div.cards section a {
-  margin: 0;
-  padding: 0.75rem 8px;
-}
-div.cards section h2 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-div.cards section img {
-  width: 50px;
-  justify-content: center;
-  align-items: center;
-  margin: 0.5rem;
-  position: relative;
-}
-div.cards section p {
-  text-align: left;
-}
-div.cards section button {
-  display: block;
-  color: rgb(225, 48, 48);
-  font-style: oblique;
-  text-align: right;
-  background-color: rgba(225, 48, 48, 0.1);
-  padding: 0.5rem 1rem 0.5rem 1rem;
-  margin: 0.5rem;
-  border: none;
-  border-radius: 10px;
-}
-div.cards section a {
-  align-content: center;
-}
-div.cards .shape {
-  width: 50px;
-  height: 50px;
-  padding: 5px;
-  border-radius: 10px;
-  background-color: white;
-}
-div.cards .bounce:hover img {
-  animation: myBounce 1s 1;
-}
-div.cards .spin:hover img {
-  animation: mySpin 2s 6;
-}
-div.cards .pulse:hover img {
-  animation: myPulse 1s 1;
-}
-div.cards .color:hover .shape {
-  animation: myColor 5s 3;
-}
-@keyframes myBounce {
-  0%, 100% {
-    top: 0;
-    animation-timing-function: ease-in-out;
-  }
-  25%, 75% {
-    top: 20px;
-    animation-timing-function: ease-in-out;
-  }
-  50% {
-    top: 10px;
-    animation-timing-function: ease-in-out;
-  }
-}
-@keyframes mySpin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-@keyframes myPulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-@keyframes myColor {
-  0% {
-    background-color: white;
-  }
-  15% {
-    background-color: red;
-  }
-  30% {
-    background-color: orange;
-  }
-  45% {
-    background-color: yellow;
-  }
-  60% {
-    background-color: green;
-  }
-  75% {
-    background-color: blue;
-  }
-  90% {
-    background-color: indigo;
-  }
-  100% {
-    background-color: white;
-  }
-}
-
-div.reviewWrapper {
-  background-color: rgb(159, 21, 21);
-  padding: 2rem 0;
-  text-align: center;
-  color: #0071BC;
-}
-
-div#reviews {
-  text-align: center;
-}
-div#reviews section {
-  margin: 10px;
-  padding: 8px;
-  max-width: 100%;
-  text-align: center;
-}
-div#reviews section img {
-  width: 20px;
-}
-div#reviews section h3 {
-  margin: 2rem 8px 0 8px;
-  text-align: center;
-  font-weight: 600;
 }
 
 #footerWrapper {
