@@ -1,0 +1,68 @@
+// header
+#headerWrapper {
+    border-bottom: 1px solid #eee;
+}
+header {
+    padding: 2rem $gutter;
+    h1 {
+        font-size: 2rem;
+    }
+    grid-template-columns: 51px auto;
+}
+
+
+
+/* NAVIGATION STUFF GOES HERE  */
+div#hamburger, div#closex {
+    display: none;
+}
+nav {
+    
+    justify-self: end;
+    ul, ul.open {
+
+        position: relative;
+        display: flex;
+        border: none;
+        justify-content: space-between;
+        background-color: transparent;
+        width: auto;
+        font-size: 1.2rem;
+    }
+    
+    ul li a {
+        color: $primaryColor;
+        background-color: transparent;
+        font-weight: $boldWeight;
+        padding: .2rem 1rem;
+        border-radius: 10px;
+        margin: .5rem 5rem;
+    }
+    ul li.active a {
+        background-color: transparent;
+        color: $tertiaryColor;
+    }
+    ul li a:hover {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 20px;
+    }
+}
+
+
+
+/* structure STUFF GOES HERE  */
+
+div#headerWrapper {
+    grid-row-start: 1;
+}
+div#navWrapper {
+    grid-row-start: 2;
+}
+div#mainWrapper {
+    grid-row-start: 3;
+}
+div#footerWrapper {
+    grid-row-start: 4;
+}

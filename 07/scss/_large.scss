@@ -1,0 +1,47 @@
+header, nav, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+//header
+header {
+    grid-template-columns: 51px auto;
+}
+//nav stuff
+nav {
+    button {
+        display: none;
+    }
+    justify-self: end;
+    ul, ul.open {
+
+        position: relative;
+        display: flex;
+        //margin-left: 2vw;
+        //padding: 1rem;
+        border: none;
+        justify-content: right;
+        background-color: transparent;
+        width: auto;
+    }
+    
+    ul li a {
+        color: $primaryColor;
+        background-color: transparent;
+        font-weight: $boldWeight;
+        padding: .2rem 1rem;
+        border-radius: 10px;
+        margin: .5rem 0;
+    }
+    ul li.active a {
+        background-color: transparent;
+        color: $tertiaryColor;
+    }
+    ul li a:hover {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 20px;
+    }
+}
+
