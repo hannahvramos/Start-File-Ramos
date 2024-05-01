@@ -6,7 +6,7 @@ hb.addEventListener('click', () => {
 });
 
 //swiper
-const swiper = new Swiper('.swiper', {
+const swiper = new swiper('.swiper', {
     // Optional parameters
     loop: true,
     effect: 'slide',

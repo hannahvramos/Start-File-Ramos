@@ -335,7 +335,7 @@ body {
 }
 
 header {
-  background-color: rgba(70, 139, 80, 0.2);
+  background-color: rgba(67, 115, 74, 0.2);
   display: flex;
   align-items: flex-end;
   padding: 1rem 8px;
@@ -462,7 +462,7 @@ main img {
   font-weight: 300;
 }
 #mainWrapper h2 {
-  color: #468b50;
+  color: #43734a;
   margin-left: 2rem;
 }
 
@@ -523,12 +523,12 @@ div.reviews-parent section img {
 }
 
 #footerWrapper {
-  background-color: #468b50;
+  background-color: #43734a;
 }
 
 footer {
   padding: 0.5rem 8px;
-  background-color: #468b50;
+  background-color: #43734a;
   text-align: center;
   color: white;
 }
