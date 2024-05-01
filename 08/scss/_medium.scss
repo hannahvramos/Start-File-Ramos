@@ -1,0 +1,53 @@
+// header
+#headerWrapper {
+    border-bottom: 1px solid #eee;
+}
+header {
+    padding: 2rem $gutter;
+    h1 {
+        font-size: 2rem;
+    }
+    grid-template-columns: 51px auto;
+}
+
+
+
+/* NAVIGATION STUFF GOES HERE  */
+#hamButton {
+    display: none;
+}
+nav {
+    button {
+        display: none;
+    }
+    justify-self: end;
+    ul, ul.open {
+
+        position: relative;
+        display: flex;
+        border: none;
+        justify-content: left;
+        background-color: transparent;
+        width: auto;
+    }
+    
+    ul li a {
+        color: $primaryColor;
+        background-color: transparent;
+        font-weight: $boldWeight;
+        padding: .2rem 1rem;
+        border-radius: 10px;
+        margin: .5rem;
+    }
+    ul li.active a {
+        background-color: transparent;
+        color: $tertiaryColor;
+    }
+    ul li a:hover {
+        background-color: rgba($color: $primaryColor, $alpha: 0.2);
+        color: $fontColor;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: 20px;
+    }
+}

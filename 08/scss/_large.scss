@@ -1,0 +1,10 @@
+header, nav, main {
+    max-width: 1240px;
+    margin: auto;
+}
+
+//header
+header {
+    grid-template-columns: 51px auto;
+}
+//nav stuff

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Technology Conference</title>
+    <meta name="description" content="Hannah Ramos start file with scss">
+    <meta name="author" content="Hannah Ramos">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="css/styles.min.css" rel="stylesheet">
+
+    <!-- fav icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+            <a href="index.html"><img src="images/logo1x.png" alt="logo" width="50" height="50" srcset="images/logo1x.png 1x, images/logo2x.png 2x, images/logo3x.png 3x"></a>
+            <div>
+                <h1>Tech Summit</h1>
+                <h2>San Francisco California, 2024</h3>
+            </div>
+            <!--<div id="hamburger"><a href="#closex">&#9776;</a></div>-->
+        </header>
+    </div>
+
+    <div id="navWrapper">
+        <nav>
+            <button id="hamButton">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </button>
+            <ul id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li class="active"><a href="speakers.html">Speakers</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mainWrapper">
+        <main>
+            <h1>Speakers</h1>
+
+            <div class="hero">
+                <video autoplay muted playsinline loop width="800" height="300">
+                    <source src="/media/hero.webm" type="video/webm">
+                    <source src="/media/hero.mp4" type="video/mp4">
+                </video>
+                <div>
+                    <h3>Join Us On The Coast</h3>
+                    <p>Purchase tickets today</p>
+                </div>
+            </div>
+
+            
+
+            <div class="cards">
+                <div><h2> Our Highlighted Speakers</h2>
+                <p>Get ready to be inspired by our lineup of visionary speakers at this year's tech conference.Hear from experts who will delve into topics ranging from artificial intelligence and cybersecurity to blockchain and the Internet of Things.</p>
+                </div>
+                <a class="card" href="#">
+                  <div class="card-body">
+                    <h2 class="card-front">
+                        Dr. Maya Patel - Artificial Intelligence Evangelist
+                    </h2>
+              
+                    <p class="card-back">
+                        Dr. Maya Patel is a leading authority in the field of artificial intelligence (AI), with over two decades of experience pushing the boundaries of what's possible with machine learning and neural networks. 
+                    </p>
+                  </div>
+                </a>
+              
+                <a class="card" href="#">
+                  <div class="card-body">
+                    <h2 class="card-front">
+                        Dr. Javier Gomez - Cybersecurity Guru
+                    </h2>
+              
+                    <p class="card-back">
+                        As the Chief Security Officer of a Fortune 500 company, Gomez has navigated the evolving threat landscape with precision and foresight, developing innovative strategies to combat cyber threats and protect sensitive data.
+                    </p>
+                  </div>
+                </a>
+
+                <a class="card" href="#">
+                    <div class="card-body">
+                      <h2 class="card-front">
+                        Dr. Aisha Khan - Blockchain Visionary
+                      </h2>
+                
+                      <p class="card-back">
+                        As the founder of a leading blockchain research institute, Dr. Khan has led groundbreaking initiatives in decentralized finance, supply chain management, and digital identity.
+                      </p>
+                    </div>
+                  </a>
+
+              </div>
+        </main>
+
+    <div id="footer">
+        <footer>
+            <p>&copy; <span id="year">2024</span> &bull; Hannah Ramos</p>
+        </footer>
+    </div>
+    <script src="js/script.js" type="module"></script>
+    
+    <!--<script src="js/reviews.js" type="module"></script> -->
+</body>
