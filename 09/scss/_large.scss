@@ -1,0 +1,35 @@
+header, main, footer {
+    max-width: 1240rem;
+    margin: auto;
+}
+
+//header
+header {
+    grid-template-columns: 51px auto;
+}
+
+//nav stuff
+nav ul li a {
+    font-size: .9rem;
+    padding: .5rem 1.2rem
+}
+
+//create for loop
+@for $i from 1 through 12 {
+    $w: calc($i /12) *100%;
+    .large-#{$i} {flex-basis: $w}
+  }
+
+//main stuff
+div.cards {
+    section {
+        flex-basis: calc(33.333% - ($gutter*2)/3);
+        //width: fit-content;
+    }
+}
+
+//footer
+footer div {
+    display: grid;
+    grid-template-columns: auto auto;
+}
