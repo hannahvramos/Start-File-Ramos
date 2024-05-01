@@ -38,7 +38,7 @@ html {
           padding: 0;
         }
     }
-    
+ 
   }
 
 //navigation
@@ -107,11 +107,70 @@ html {
   }
   h2 {
     color: $primaryColor;
+    margin-left: 2rem;
   }
+  }
+  
+  //swiper
+  .swiper, .swiper img {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    position: absolute;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    color: white;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    padding: 0.5rem 3rem;
+    border-radius: 10px;
+    z-index: 999;
+    h3 {
+      font-size: 1.5rem;
+      font-weight: $normalWeight;
+      text-shadow: 0 0 2px black
+    }
   }
   
 
-  
+//masks
+div.parent {
+  display: grid;
+  section {
+    position: relative;
+    padding: 7px;
+    img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    img:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
+
+
+
+//reviews paths
+ div.reviews-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  section {
+    padding: 7px;
+    img {
+      width: 100%;
+      height: auto;
+      clip-path: circle(50% at 50% 50%)
+    }
+  }
+ }
+ 
 
   // begin footer
 #footerWrapper {

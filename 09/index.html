@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="css/styles.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
     <!-- fav icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -54,75 +55,94 @@
         <main>
             <h1>Welcome</h1>
 
-            <div class="row">
-                <div class="column small-12 large-8">
-                    <section class="line round">
-                    <h2>Our Promise</h2>
-                    <p>Experience unparalleled connectivity with our mobile telephone coverage. Our extensive network ensures that you stay connected wherever you go, whether in bustling urban centers or remote rural areas. With seamless coverage and robust infrastructure, you can confidently make calls, send messages, and access the internet without interruptions. Our commitment to providing reliable coverage means you can rely on our network to keep you connected when it matters most, ensuring that you're always in touch with your loved ones, colleagues, and the world around you. Whether you're at home, at work, or on the move, trust our mobile telephone coverage to keep you connected, empowered, and engaged.</p>
-                    </section>
-                </div>
-                <div class="column small-12 medium-8 large-4">
-                    
-                    <h2>Coverage and value with no trade-offs.</h2>
-                    <p>G-Mobile covers towns like yours and 99% of people in America. We’re investing in bringing our amazing network and fast, affordable service to small towns and rural areas, because no one should miss out on our best network yet.</p>
-                    
-                </div>
-
-                <div class="row fill">
-                    <div class="column small-12 medium-6 large-3">
-                        <img src="images/gen01-small.webp" alt="iphone gen 1" width="259" height="194">
-                        <p>Explore a world of endless possibilities with iPhones, where intuitive interfaces and seamless integration empower you to do more, connect effortlessly, and express your individuality with style. Join the revolution and embrace the future of mobile with iPhones.</p>
-                     </div>
-                    <div class="column small-12 medium-6 large-3">
-                        <img src="images/gen02-small.webp" alt="iphone gen 2" width="272" height="185">
-                        <p>Explore a world of endless possibilities with iPhones, where intuitive interfaces and seamless integration empower you to do more, connect effortlessly, and express your individuality with style.</p>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="overlay"><h3>We're the best in the business!</h3></div>
+                <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slide01-small.jpg" media="(max-width: 400px)">
+                            <source srcset="images/slide01-medium.jpg" media="(max-width: 800px)">
+                            <img src="images/slide01.jpg" alt="sliderA">
+                        </picture>
                     </div>
-                    <div class="column small-12 medium-6 large-3">
-                        <img src="images/gen03-small.webp" alt="iphone gen 3" width="225" height="225">
-                        <p>Explore a world of endless possibilities with iPhones, where intuitive interfaces and seamless integration empower you to do more, connect effortlessly, and express your individuality with style.</p>
-                     </div>
-                    <div class="column small-12 medium-6 large-3">
-                        <img src="images/gen04-small.webp" alt="iphone gen 4" width="233" height="216">
-                        <p>Explore a world of endless possibilities with iPhones, where intuitive interfaces and seamless integration empower you to do more, connect effortlessly, and express your individuality with style. Join the revolution and embrace the future of mobile with iPhones.</p>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slide02-small.jpg" media="(max-width: 400px)">
+                            <source srcset="images/slide02.jpg" media="(max-width: 800px)">
+                            <img src="images/slide02.jpg" alt="sliderB">
+                        </picture>
                     </div>
+
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/slide03-small.jpg" media="(max-width: 400px)">
+                            <source srcset="images/slide03-medium.jpg" media="(max-width: 800px)">
+                            <img src="images/slide03.jpg" alt="sliderC">
+                        </picture>
+                    </div>
+                
+                </div>
+                
+                <!-- pagination -->
+                <div class="swiper-pagination"></div>
+                     
                 </div>
 
-                 <div class="row">
-                    <div class="column small-6 medium-5 large-6">
-                        <section class="shadow round">
-                        <h2>Save 45% vs. AB&B and Horizon on a plan for ages 56+</h2>
-                        <p>With two unlimited lines on our Essentials Choice 56 plan. Get access to America's largest and fastest 5G network plus other new benefits like Shield Scam Premium, which gives you control over calls and voicemails. All while saving $600 a year.</p>
+                <h2> Our Services</h2>
+            <!-- columns -->
+                <div class="parent">
+
+                    <section>
+                        <h2>Lawn</h2>
+                        <img src="images/lawn.jpg" alt="lawn" width="1" height="1">
+                        <img src="images/mask.svg" alt="mask">
                     </section>
-                </div>
-                    <div class="column small-6 medium-4 large-3">
-                        <section class="shadow round">
-                        <h2>Unlimited talk, and text, and data on America’s largest 5G network.</h2>
-                        <p>All of our plans include unlimited 5G at no extra cost. Our 5G network covers more people and places than anyone else.</p>
+
+                    <section>
+                        <h2>Tree</h2>
+                        <img src="images/tree.jpg" alt="tree" width="1" height="1">
+                        <img src="images/mask.png" alt="mask">
                     </section>
-                </div>
-                    <div class="column small-12 medium-3 large-3">
-                        <section class="shadow round">
-                        <h2>G-Mobile helps you break free from AB&B and Horizon.</h2>
-                        <p>Break free from contracts that make you wait 3 years to get your full device deal. We’ll help pay off your contract, making it easier than ever to make the switch. It’s time to upgrade your phone and your carrier.</p>
+
+                    <section>
+                        <h2>Water</h2>
+                        <img src="images/water.jpg" alt="water" width="1" height="1">
+                        <img src="images/mask.svg" alt="mask">
                     </section>
-                </div>
-                    <div class="column small-12 medium-12 large-12">
-                        <section class="shadow round">
-                        <h2>Get $200 back when you switch to G-Mobile Go Internet.</h2>
-                        <p>Sign up now online or via chat to get a $200 virtual prepaid Mastercard®.</p>
+                    
+                    <section>
+                        <h2>Flowers</h2>
+                        <img src="images/flowers.jpg" alt="flower" width="1" height="1">
+                        <img src="images/mask.png" alt="mask">
                     </section>
-                </div>
                 </div>
 
-                </div>
+            <!-- reviews -->
+            <h2>Testimonials</h2>
+            <div class="reviews-parent">
+                <section> 
+                    <img src="images/customer1.jpg" width="200" height="200" alt="customer one">
+                    <p>"Wow! I can't praise Verde Grasses enough! Their team transformed my backyard into a stunning oasis. From the initial consultation to the final touches, their attention to detail and professionalism were exceptional. Now, I can't wait to invite friends over to show off my beautifully landscaped yard. Highly recommend them to anyone looking to elevate their outdoor space!"</p>
+                </section>
+
+                <section> 
+                    <img src="images/customer2.jpg" width="200" height="200" alt="customer two">
+                    <p>"I couldn't be happier with the results of our landscaping project, all thanks to the incredible work done by Verde Grasses. They listened to our ideas and turned them into reality, exceeding our expectations. Our front yard went from dull and uninspiring to vibrant and inviting. The team was efficient, courteous, and left the site spotless. It's like we have a whole new home! Thank you for making our outdoor dreams come true!"</p>
+                </section>
+            </div>
+
         </main>
     </div>
 
     <div id="footer">
         <footer>
-            <p>&copy; <span id="year">X</span> &bull; Hannah Ramos</p>
+            <p>&copy; <span id="year">2024</span> &bull; Hannah Ramos</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/script.js" type="module"></script>
-    <!--<script src="js/reviews.js" type="module"></script> -->
 </body>

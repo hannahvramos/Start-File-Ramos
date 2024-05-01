@@ -28,6 +28,19 @@ div.cards {
     }
 }
 
+div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+//clip paths
+div.reviews-parent {
+    section {
+        display: grid;
+        grid-template-columns: 200px auto;
+        column-gap: 8px;
+    }
+   }
+
 //footer
 footer div {
     display: grid;

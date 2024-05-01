@@ -463,6 +463,63 @@ main img {
 }
 #mainWrapper h2 {
   color: #468b50;
+  margin-left: 2rem;
+}
+
+.swiper, .swiper img {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-wrapper {
+  position: absolute;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  z-index: 999;
+}
+.overlay h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-shadow: 0 0 2px black;
+}
+
+div.parent {
+  display: grid;
+}
+div.parent section {
+  position: relative;
+  padding: 7px;
+}
+div.parent section img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+div.parent section img:last-child {
+  position: absolute;
+  bottom: 0;
+}
+
+div.reviews-parent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+div.reviews-parent section {
+  padding: 7px;
+}
+div.reviews-parent section img {
+  width: 100%;
+  height: auto;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
 }
 
 #footerWrapper {
@@ -655,6 +712,20 @@ footer {
   div.cards section {
     flex-basis: calc(50% - 4px);
   }
+  div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    padding: 10px;
+  }
+  div.reviews-parent section {
+    display: grid;
+    grid-template-columns: 140px auto;
+    -moz-column-gap: 6px;
+         column-gap: 6px;
+    padding: 10px;
+  }
   footer div {
     display: grid;
     grid-template-columns: auto auto;
@@ -711,6 +782,16 @@ footer {
   }
   div.cards section {
     flex-basis: calc(33.333% - 5.3333333333px);
+  }
+  div.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  div.reviews-parent section {
+    display: grid;
+    grid-template-columns: 200px auto;
+    -moz-column-gap: 8px;
+         column-gap: 8px;
   }
   footer div {
     display: grid;
